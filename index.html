@@ -275,7 +275,7 @@
     <!-- Contato -->
     <section id="contato" class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center section-title">Entre em Contato</h2>
+        <h2 class="text-center section-title">Agende seu horário</h2>
 
         <div class="row justify-content-center">
           <div class="col-md-8">
@@ -306,6 +306,39 @@
               </div>
 
               <div class="mb-3">
+                <label for="servico" class="form-label">Serviço</label>
+                <select class="form-select" id="servico" required>
+                  <option value="">Selecione um serviço</option>
+                  <option>Corte de cabelo - R$ 40</option>
+                  <option>Barba - R$ 30</option>
+                  <option>Corte + Barba - R$ 60</option>
+                  <option>Hidratação - R$ 50</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="data" class="form-label">Data</label>
+                  <input type="date" class="form-control" id="data" required />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="horario" class="form-label">Horário</label>
+                  <select class="form-select" id="horario" required>
+                    <option value="">Selecione um horário</option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
                 <label for="mensagem" class="form-label">Mensagem</label>
                 <textarea
                   class="form-control"
@@ -317,7 +350,7 @@
               </div>
 
               <button type="submit" class="btn btn-warning w-100">
-                Enviar mensagem
+                Confirmar agendamento
               </button>
             </form>
             <div id="alerta" class="alert alert-success d-none mt-3">
